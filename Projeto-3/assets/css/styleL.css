@@ -111,7 +111,7 @@ main {
 
 /* ------------------ Media Queries ------------------ */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {    
     /* Main */
     main {
         flex-direction: column; /* Empilha os itens verticalmente */
@@ -130,4 +130,6 @@ main {
       flex-wrap:wrap-reverse ;
     }
 
-    /* Outros ajustes de fonte
+    
+
+}
