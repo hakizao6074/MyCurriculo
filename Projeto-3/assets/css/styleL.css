@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Essencial para evitar quebras de layout */
+    box-sizing: border-box; 
 }
 
 body {
@@ -47,7 +47,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
 }
 
 main {
@@ -55,11 +55,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 1000px; /* Alterado de 'width' fixo para 'max-width' */
-    height: auto; /* Alterado de 'height' fixo para 'auto' */
-    margin: 20px auto; /* Centraliza o main na página */
+    width: 1000px; 
+    height: 450px; 
+    margin: 20px auto; 
     padding: 20px;
-    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    
 }
 
 .name {
@@ -73,8 +73,8 @@ main {
 .imgPerf {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza a imagem */
-    margin-right: 20px; /* Adiciona espaçamento à direita */
+    justify-content: center; 
+    margin-right: 20px; 
 }
 
 .Nome {
@@ -109,7 +109,6 @@ main {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ------------------ Media Queries ------------------ */
 
 @media screen and (max-width: 768px) {    
     /* Main */
