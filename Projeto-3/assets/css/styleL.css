@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Essencial para evitar quebras de layout */
+}
 
 body {
-    display: flex;
-    font-family: "Poppins";
-    font-weight: normal;
-    align-items: center;
-    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
 }
 
 .links {
@@ -13,7 +18,9 @@ body {
     display: flex;
     margin: 4px;
     align-items: center;
+    justify-content: space-around;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -26,13 +33,21 @@ body {
 .cont {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: column;
 }
 
-
 .cont2 {
     background-color: #D9D9D9;
+}
+
+.cont3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
 }
 
 main {
@@ -40,12 +55,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1000px;
-    height: 450px;
+    max-width: 1000px; /* Alterado de 'width' fixo para 'max-width' */
+    height: auto; /* Alterado de 'height' fixo para 'auto' */
+    margin: 20px auto; /* Centraliza o main na página */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
 }
 
 .name {
-    padding: 0%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,8 +73,61 @@ main {
 .imgPerf {
     display: flex;
     align-items: center;
-    justify-content: right;   
+    justify-content: center; /* Centraliza a imagem */
+    margin-right: 20px; /* Adiciona espaçamento à direita */
 }
 
+.Nome {
+    font-size: 30px;
+    color: #28283bf3;
+    text-decoration: none;
+}
 
+.buttonLL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #000000, #333947);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
 
+.buttonLL:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------ Media Queries ------------------ */
+
+@media screen and (max-width: 768px) {
+    /* Main */
+    main {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center;
+    }
+
+    /* Imagem */
+    .imgPerf {
+        margin-right: 0; /* Remove a margem da imagem */
+        margin-bottom: 20px; /* Adiciona margem abaixo da imagem */
+    }
+
+    /* Botões */
+    .links {
+      display: flex;
+      flex-wrap:wrap-reverse ;
+    }
+
+    /* Outros ajustes de fonte
